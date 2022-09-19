@@ -4,13 +4,8 @@ import openpyxl.utils.cell
 
 from datetime import datetime as dt
 
-from user_preference.UserPreference import requirements, preference
+from User_Preference.UserPreference import requirements, preference
 from Process import indexdt
-
-
-
-
-
 
 
 class ExportWorkbook:
@@ -36,33 +31,33 @@ class ExportWorkbook:
 
         temp = [requirements["temp"]["min"]]
         temp.append(requirements["temp"]["max"])
-        temp.append(preference["temp"]["max"])
         temp.append(preference["temp"]["min"])
+        temp.append(preference["temp"]["max"])
 
         humidity = [requirements["humidity"]["min"]]
         humidity.append(requirements["humidity"]["max"])
-        humidity.append(preference["humidity"]["max"])
         humidity.append(preference["humidity"]["min"])
+        humidity.append(preference["humidity"]["max"])
 
         pressure = [requirements["pressure"]["min"]]
         pressure.append(requirements["pressure"]["max"])
-        pressure.append(preference["pressure"]["max"])
         pressure.append(preference["pressure"]["min"])
+        pressure.append(preference["pressure"]["max"])
 
         speed = [requirements["wind_speed"]["min"]]
         speed.append(requirements["wind_speed"]["max"])
-        speed.append(preference["wind_speed"]["max"])
         speed.append(preference["wind_speed"]["min"])
+        speed.append(preference["wind_speed"]["max"])
 
         precp = [requirements["precipitation%"]["min"]]
         precp.append(requirements["precipitation%"]["max"])
-        precp.append(preference["precipitation%"]["max"])
         precp.append(preference["precipitation%"]["min"])
+        precp.append(preference["precipitation%"]["max"])
 
         vis = [requirements["visibility"]["min"]]
         vis.append(requirements["visibility"]["max"])
-        vis.append(preference["visibility"]["max"])
         vis.append(preference["visibility"]["min"])
+        vis.append(preference["visibility"]["max"])
 
         data = []
         data.append(time)

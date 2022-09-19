@@ -1,8 +1,8 @@
 from datetime import datetime
 
 import sys
-sys.path.append(r"C:\Users\omami\Desktop\Code\Python_Code\Weather")
-from user_preference.UserPreference import requirements, preference
+sys.path.append(r"C:\Users\omami\Desktop\Code\Python_Code\Weather_Sort")
+from User_Preference.UserPreference import requirements, preference
 
 
 

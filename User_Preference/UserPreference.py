@@ -6,8 +6,8 @@ requirements = {
     },
 
     "temp": {
-        "min" : None, 
-        "max" : 75
+        "min" : 60, 
+        "max" : None
     },
 
     "humidity": {
@@ -58,7 +58,7 @@ preference = {
 
     "temp": {
         "min" : 70, 
-        "max" : 70
+        "max" : 75
     },
 
     "humidity": {
